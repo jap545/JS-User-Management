@@ -1,0 +1,32 @@
+<h1>{{title}}</h1>
+
+{{#if user}}
+<a href="/customers/add">Add a New User</a>
+{{/if}}
+
+{{!-- To Show data --}}
+<table class="table table-striped table-hover">
+  <thead>
+    <th>Name</th>
+    <th>Telephone</th>
+    <th>Email</th>
+    <th>Details</th>
+  </thead>
+  <tbody>
+  {{#each dataset}}
+    <tr>
+      <td>{{this.name}}</Td>
+      <td>{{this.tel}}</Td>
+      <td>{{this.email}}</Td>
+      <td>{{this.details}}</Td>
+      {{!-- Protecting by Hiding --}}
+      {{#if ../user}}
+      <td>
+        <a href="/customers/edit/{{this._id}}" class="btn btn-primary">Edit</a>
+        <a href="/customers/delete/{{this._id}}" class="btn btn-danger" onclick="return confirmDeletion();">Delete</a>
+      </td>
+      {{/if}}
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
