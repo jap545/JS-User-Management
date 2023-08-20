@@ -1,6 +1,3 @@
-# JS-User-Management
-# I added Google Oauth for creativity
-# Fully functional CRUD Application
 # User Management App
 
 Welcome to the User Management App! This is a web application created by Japneet Singh built with Node.js, Express, MongoDB, and Passport.js. It allows users to register, log in, and manage customer/user data.
@@ -9,6 +6,7 @@ Welcome to the User Management App! This is a web application created by Japneet
 
 - User registration and authentication
 - GitHub and Google OAuth2 authentication
+- I added Google Oauth for creativity
 - View, add, edit, and delete customer information
 - Responsive design for various devices
 
